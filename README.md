@@ -3,6 +3,13 @@
 
 # Is prediction of species richness from Stacked Species Distribution Models biased by habitat saturation?
 
+<!-- badges: start -->
+
+[![DOI](https://zenodo.org/badge/224002794.svg)](https://zenodo.org/badge/latestdoi/224002794)
+[![Launch Rstudio
+Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Rekyt/ssdms_saturation_richness/master?urlpath=rstudio)
+<!-- badges: end -->
+
 This repository contains the data and code for our paper:
 
 > Grenié M., Violle C, Munoz F. * Is prediction of species richness from
@@ -23,8 +30,8 @@ Please cite this compendium as:
 You can download the compendium as a zip from from this URL:
 </archive/master.zip>
 
-Or you can install this compendium as an R package, `comsat`, from
-GitHub with:
+Or you can install this compendium as an R package,
+\`cssdms.saturation.richness, from GitHub with:
 
 ``` r
 # install.packages("devtools")
@@ -46,7 +53,11 @@ make(saturation_workflow())  # Run Analyses
 Beware that some code make time a long time to run, and it may be useful
 to run analyses in parallel.
 
-## Dependencies
+\#\#You can run the analyses by clicking on the `Binder` badge:
+[![Launch Rstudio
+Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Rekyt/ssdms_saturation_richness/master?urlpath=rstudio)
+
+Dependencies
 
 As noted in the `DESCRPTION` files this project depends on:
 
