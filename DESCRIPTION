@@ -1,0 +1,31 @@
+Package: ssdms.saturation.richness
+Version: 0.0.0.9000
+Title: Richness Predictions from Stacked SDMs between Threshold and Probabilities
+Description: The aim of this package is to provide a reproducible analysis to
+  understand the influence of using threshold when predicting species richness
+  with species distribution models.
+Authors@R: c(
+  person("Matthias", "Grenié", email = "matthias.grenie@gmail.com",
+         role = c("aut", "cre"), comment = c(ORCID = "0000-0002-4659-7522")),
+  person("François", "Munoz", email = "fmunoz@univ-grenoble-alpes.fr",
+         role = c("aut", "ths"), comment = c(ORCID = "0000-0001-8776-4705")),
+  person("Cyrille", "Violle", email = "cyrille.violle@cefe.cnrs.fr",
+         role = c("aut", "ths"), comment = c(ORCID = "0000-0002-2471-9226"))
+  )
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+URL: https://github.com/Rekyt/comsat
+BugReports: https://github.com/Rekyt/comsat/issues
+Imports: 
+    dplyr,
+    drake (>= 7.3.0),
+    ggplot2,
+    ggpubr,
+    magrittr,
+    purrr,
+    tidyr,
+    virtualspecies,
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.0.1

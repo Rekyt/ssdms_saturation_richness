@@ -1,0 +1,13 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.Renviron
+.drake/
+/figures/
+*_cache/
+*_files/
+*.log
+*.tex
+*.fff
+.drake_history/

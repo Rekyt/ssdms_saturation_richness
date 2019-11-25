@@ -1,0 +1,62 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+# Please put your title here to include it in the file below.
+Title <- "
+Is prediction of species richness from Stacked Species Distribution Models biased by habitat saturation?"
+```
+
+# Is prediction of species richness from Stacked Species Distribution Models biased by habitat saturation?
+
+This repository contains the data and code for our paper:
+
+> Grenié M., Violle C, Munoz F. _`r Title`_. accepted in _Ecological Indicators_.
+
+
+## How to cite
+
+Please cite this compendium as:
+
+> Grenié M., Violle C, Munoz F., (`r format(Sys.Date(), "%Y")`). _Compendium of R code and data for `r Title`_. Accessed `r format(Sys.Date(), "%d %b %Y")`. Online at <https://doi.org/xxx/xxx>
+
+## 🔧 How to download or install
+
+You can download the compendium as a zip from from this URL: </archive/master.zip>
+
+Or you can install this compendium as an R package, `cssdms.saturation.richness, from GitHub with:
+
+```{r gh-installation, eval = FALSE}
+# install.packages("devtools")
+remotes::install_github("Rekyt/ssdms_saturation_richness")
+```
+
+## 💻 How to run the analyses
+
+This compendium uses [`drake`](https://docs.ropensci.org/drake/) to make analyses reproducible.
+To redo the analyses and rebuild the manuscript run the following lines (from the `comsat` folder):
+
+```{r run-analyses, eval = FALSE}
+# install.packages("devtools")
+pkgload::load_all()  # Load all functions included in the package
+make(saturation_workflow())  # Run Analyses
+```
+
+Beware that some code make time a long time to run, and it may be useful to run analyses in parallel.
+
+## Dependencies
+
+As noted in the `DESCRPTION` files this project depends on:
+
+* [`virtualspecies`](https://cran.r-project.org/package=virtualspecies), to simulate species;
+* [`drake`](https://cran.r-project.org/package=drake), to execute a reproducible workflow;
+* the `tidyverse` (`dplyr`, `ggplot2`, `purrr`, and `tidyr`) for data wrangling;
+* [`ggpubr`](https://cran.r-project.org/package=ggpubr) to customize plot
