@@ -22,8 +22,8 @@ Please cite this compendium as:
 
 > Grenié M., Violle C, Munoz F., (2019). *Compendium of R code and data
 > for Is prediction of species richness from Stacked Species
-> Distribution Models biased by habitat saturation?*. Accessed 25 nov.
-> 2019. Online at <https://doi.org/xxx/xxx>
+> Distribution Models biased by habitat saturation?*. Accessed 02 déc.
+> 2019. Online at <https://doi.org/10.5281/zenodo.3552836>
 
 ## 🔧 How to download or install
 
