@@ -26,6 +26,7 @@ Imports:
     magrittr,
     purrr,
     scales,
+    SDMTools,
     tidyr,
     virtualspecies,
 Roxygen: list(markdown = TRUE)
