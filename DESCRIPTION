@@ -16,8 +16,8 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 ByteCompile: true
-URL: https://github.com/Rekyt/comsat
-BugReports: https://github.com/Rekyt/comsat/issues
+URL: https://github.com/Rekyt/ssdms_saturation_richness
+BugReports: https://github.com/Rekyt/ssdms_saturation_richness/issues
 Imports: 
     dplyr,
     drake (>= 7.3.0),
