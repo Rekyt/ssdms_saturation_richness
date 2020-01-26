@@ -25,6 +25,7 @@ Imports:
     ggpubr,
     magrittr,
     purrr,
+    scales,
     tidyr,
     virtualspecies,
 Roxygen: list(markdown = TRUE)

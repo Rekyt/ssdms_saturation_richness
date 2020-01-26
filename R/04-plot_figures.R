@@ -32,15 +32,15 @@ compare_theor_obtained_responses = function(full_sdm_df, virtual_sp,
                                   list(list(x = cell),
                                        as.list(virtual_params$args)) %>%
                                       purrr::flatten())) %>%
-        mutate(pred_glm = divr::scale_zero_one(pred_glm),
+        mutate(pred_glm = scales::rescale(pred_glm, to = c(0, 1)),
                env_suitab = virtualspecies::logisticFun(pred_glm,
                                                         pa_conv[["alpha"]] %>%
                                                             as.numeric(),
                                                         pa_conv[["beta"]] %>%
                                                             as.numeric()) %>%
-                   divr::scale_zero_one(),
+                   scales::rescale(to = c(0, 1)),
                total_prob = (pred_glm * env_suitab) %>%
-                   divr::scale_zero_one())
+                   scales::rescale(to = c(0, 1)))
 
     # Get range of when thresholds predict presences or absences
     pres_abs_segments = full_sdm_df %>%

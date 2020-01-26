@@ -78,7 +78,7 @@ change_alt_hab_sat = function(species_list, hab_sat_level) {
         purrr::map_dfr(~.x$details$parameters$unidim$args %>%
                            {do.call(virtualspecies::quadraticFun,
                                     c(list(1:2000), .))} %>%
-                           divr::scale_zero_one() %>%
+                           scales::rescale(to = c(0, 1)) %>%
                            data.frame(cell = 1:2000, env_suitab = .,
                                       hab_sat = hab_sat_level) %>%
                            mutate(env_sat = env_suitab * hab_sat,
