@@ -12,18 +12,19 @@ Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Rekyt/ss
 
 This repository contains the data and code for our paper:
 
-> Grenié M., Violle C, Munoz F. * Is prediction of species richness from
-> Stacked Species Distribution Models biased by habitat saturation?*.
-> accepted in *Ecological Indicators*.
+> Grenié, M., Violle, C., & Munoz, F. (2020). Is prediction of species
+> richness from stacked species distribution models biased by habitat
+> saturation?. *Ecological Indicators*, 111, 105970.
+> <https://doi.org/10.1016/j.ecolind.2019.105970>
 
 ## How to cite
 
 Please cite this compendium as:
 
-> Grenié M., Violle C, Munoz F., (2019). *Compendium of R code and data
+> Grenié M., Violle C, Munoz F., (2022). *Compendium of R code and data
 > for Is prediction of species richness from Stacked Species
-> Distribution Models biased by habitat saturation?*. Accessed 02 déc.
-> 2019. Online at <https://doi.org/10.5281/zenodo.3552836>
+> Distribution Models biased by habitat saturation?*. Accessed 25 mars
+> 2022. Online at <https://doi.org/10.5281/zenodo.3552836>
 
 ## 🔧 How to download or install
 
@@ -53,19 +54,17 @@ make(saturation_workflow())  # Run Analyses
 Beware that some code make time a long time to run, and it may be useful
 to run analyses in parallel.
 
-\#\#You can run the analyses by clicking on the `Binder` badge:
-[![Launch Rstudio
-Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Rekyt/ssdms_saturation_richness/master?urlpath=rstudio)
+## You can run the analyses by clicking on the `Binder` badge: [![Launch Rstudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Rekyt/ssdms_saturation_richness/master?urlpath=rstudio)
 
 Dependencies
 
 As noted in the `DESCRPTION` files this project depends on:
 
-  - [`virtualspecies`](https://cran.r-project.org/package=virtualspecies),
+-   [`virtualspecies`](https://cran.r-project.org/package=virtualspecies),
     to simulate species;
-  - [`drake`](https://cran.r-project.org/package=drake), to execute a
+-   [`drake`](https://cran.r-project.org/package=drake), to execute a
     reproducible workflow;
-  - the `tidyverse` (`dplyr`, `ggplot2`, `purrr`, and `tidyr`) for data
+-   the `tidyverse` (`dplyr`, `ggplot2`, `purrr`, and `tidyr`) for data
     wrangling;
-  - [`ggpubr`](https://cran.r-project.org/package=ggpubr) to customize
+-   [`ggpubr`](https://cran.r-project.org/package=ggpubr) to customize
     plot

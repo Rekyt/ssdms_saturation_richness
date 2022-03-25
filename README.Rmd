@@ -23,7 +23,7 @@ Is prediction of species richness from Stacked Species Distribution Models biase
 
 This repository contains the data and code for our paper:
 
-> Grenié M., Violle C, Munoz F. _`r Title`_. accepted in _Ecological Indicators_.
+> Grenié, M., Violle, C., & Munoz, F. (2020). Is prediction of species richness from stacked species distribution models biased by habitat saturation?. _Ecological Indicators_, 111, 105970. <https://doi.org/10.1016/j.ecolind.2019.105970>
 
 
 ## How to cite
@@ -31,6 +31,7 @@ This repository contains the data and code for our paper:
 Please cite this compendium as:
 
 > Grenié M., Violle C, Munoz F., (`r format(Sys.Date(), "%Y")`). _Compendium of R code and data for `r Title`_. Accessed `r format(Sys.Date(), "%d %b %Y")`. Online at <https://doi.org/10.5281/zenodo.3552836>
+
 
 ## 🔧 How to download or install
 
@@ -42,6 +43,7 @@ Or you can install this compendium as an R package, `cssdms.saturation.richness,
 # install.packages("devtools")
 remotes::install_github("Rekyt/ssdms_saturation_richness")
 ```
+
 
 ## 💻 How to run the analyses
 
@@ -56,7 +58,7 @@ make(saturation_workflow())  # Run Analyses
 
 Beware that some code make time a long time to run, and it may be useful to run analyses in parallel.
 
-##You can run the analyses by clicking on the `Binder` badge: [![Launch Rstudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Rekyt/ssdms_saturation_richness/master?urlpath=rstudio)
+## You can run the analyses by clicking on the `Binder` badge: [![Launch Rstudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Rekyt/ssdms_saturation_richness/master?urlpath=rstudio)
 
  Dependencies
 
